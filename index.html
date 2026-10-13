@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Portal</title>
     <style>
         body {
@@ -9,24 +10,45 @@
             margin: 40px;
             background: #eef2f5;
         }
+
         .card {
             background: white;
             padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        h1 { color: #0066cc; }
+
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #28a745;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #0066cc;
+        }
+
+        footer {
+            margin-top: 25px;
+            padding: 15px 0;
+            color: #555;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
+    <main class="card">
         <h1>DevOps Continuous Delivery Portal</h1>
+        <span class="status-badge">System Status: OPERATIONAL</span>
         <p>Environment: Windows Workstation</p>
-        <p>Release Version: 1.0.0</p>
-    </div>
+        <p>Release Version: 1.1.0-feature</p>
+    </main>
+
+    <footer>
+        <p>Maintained on Windows PC - CDAC DevOps Module</p>
+    </footer>
 </body>
-<footer>
-    <p>Maintained on Windows PC - CDAC DevOps Module</p>
-</footer>
-EOF
 </html>
